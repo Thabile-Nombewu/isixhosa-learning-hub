@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>IsiXhosa Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>IsiXhosa Learning Hub</h1>
+        <p><em>Empowering learners through language and code</em></p>
+        <!-- Language Toggle -->
+        <div style="text-align: right; margin: 10px;">
+            <label for="languageToggle">🌍 Language:</label>
+            <select id="languageToggle" onchange="toggleLanguage()">
+                <option value="en">English</option>
+                <option value="xo">isiXhosa</option>
+            </select>
+        </div>
+
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome / Wamkelekile</h2>
+        <p>
+            Learn to code in Python with lessons and quizzes in both English and isiXhosa.<br>
+            Funda iPython ngezifundo kunye neenguqulelo ngesiNgesi nesiXhosa.
+        </p>
+        <a href="tutorials.html" class="cta-button">Start Learning / Qalisa ukufunda</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <h3>Our Mission / Injongo yethu</h3>
+        <p>
+            We believe everyone deserves access to tech education in their own language.<br>
+            Sikholelwa ukuba wonke umntu unelungelo lokufunda itekhnoloji ngolwimi lwabo.
+        </p>
+    </section>
+
+    <!-- Navigation Cards -->
+    <section class="nav-cards">
+        <div class="card">
+            <h4>Tutorials / Izifundo</h4>
+            <p>Step-by-step Python lessons in isiXhosa and English.</p>
+            <a href="tutorials.html">Explore</a>
+        </div>
+        <div class="card">
+            <h4>Quizzes / Iimviwo</h4>
+            <p>Test your knowledge with interactive coding questions.</p>
+            <a href="quizzes.html">Try Now</a>
+        </div>
+        <div class="card">
+            <h4>Glossary / Igalelo lamagama</h4>
+            <p>Learn key coding terms in isiXhosa.</p>
+            <a href="glossary.html">View Terms</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Thabile | Contact: tbnbonase@gmail.com</p>
+        <button onclick="toggleLanguage()">Switch Language / Tshintsha ulwimi</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

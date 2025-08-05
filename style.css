@@ -1,0 +1,144 @@
+/* style.css */
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: #004d40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero {
+  background-color: #e0f7fa;
+  padding: 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #00796b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.about {
+  padding: 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.nav-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00796b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.tutorials-page {
+  background-color: #f9f9f9;
+}
+
+.tutorials-page .card {
+  border-left: 5px solid #4caf50;
+}
+/* Base styles (already in your file) */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌐 Responsive Design */
+@media (max-width: 768px) {
+  .nav-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  header h1,
+  .hero h2 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+  }
+}

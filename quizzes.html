@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Python Quiz - IsiXhosa Learning Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Python Quiz / Uviwo lwePython</h1>
+        <p><em>Test your knowledge / Vavanya ulwazi lwakho</em></p>
+    </header>
+
+    <!-- Instructions -->
+    <section class="hero">
+        <h2>Choose the correct answer / Khetha impendulo efanelekileyo</h2>
+    </section>
+
+    <!-- Quiz Questions -->
+    <section class="nav-cards">
+
+        <div class="card">
+            <h3>1. What does a loop do? / Yintoni eyenziwa yi-loop?</h3>
+            <form>
+                <label><input type="radio" name="q1" value="a"> Stores data / Igcina ulwazi</label><br>
+                <label><input type="radio" name="q1" value="b"> Repeats actions / Iphinda izinto</label><br>
+                <label><input type="radio" name="q1" value="c"> Makes decisions / Yenza izigqibo</label>
+            </form>
+        </div>
+
+        <div class="card">
+            <h3>2. Which symbol is used for comments? / Luphawu luni olusetyenziswa kwiingcaciso?</h3>
+            <form>
+                <label><input type="radio" name="q2" value="a"> @</label><br>
+                <label><input type="radio" name="q2" value="b"> #</label><br>
+                <label><input type="radio" name="q2" value="c"> *</label>
+            </form>
+        </div>
+
+        <button onclick="checkAnswers()">Submit / Thumela</button>
+        <p id="result"></p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            <a href="index.html">← Back to Homepage</a> |
+            <a href="tutorials.html">← Back to Tutorials</a>
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function checkAnswers() {
+            const q1 = document.querySelector('input[name="q1"]:checked');
+            const q2 = document.querySelector('input[name="q2"]:checked');
+            let score = 0;
+
+            if (q1 && q1.value === "b") score++;
+            if (q2 && q2.value === "b") score++;
+
+            document.getElementById("result").textContent =
+                "You scored " + score + " out of 2! / Ufumene amanqaku " + score + " kwi-2!";
+        }
+    </script>
+
+</body>
+
+</html>
